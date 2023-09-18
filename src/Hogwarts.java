@@ -1,4 +1,4 @@
-public class Hogwarts {
+public abstract class Hogwarts {
     private String name;
     private int spellPower;
     private int transgression;
@@ -21,11 +21,11 @@ public class Hogwarts {
 
     @Override
     public String toString() {
-        return "name='" + name + '\'' +
-                ", spellPower=" + spellPower +
-                ", transgression=" + transgression;
+        return "name " + name +
+                ", spellPower " + spellPower +
+                ", transgression " + transgression;
     }
-    public void compareHogwarts(Hogwarts other){
+    public void compare(Hogwarts other){
         int sumThis = this.spellPower+this.transgression;
         int sumOther = other.spellPower+other.transgression;
         if (sumThis > sumOther) {
@@ -35,7 +35,7 @@ public class Hogwarts {
             System.out.println(other.getName() + " лучший студент чем " + this.getName());
         }
         else {
-            System.out.println("Студенты " + this.getName() + " и " + other.getName() + " равны в учебе");
+            System.out.println("Студенты " + this.getName() + " и " + other.getName() + " равны в учёбе");
         }
     }
 }

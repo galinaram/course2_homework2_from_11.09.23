@@ -23,11 +23,10 @@ public class Gryffindor  extends Hogwarts {
 
     @Override
     public String toString() {
-        return super.toString() + " Gryffindor {" +
+        return super.toString() +
                 " nobility " + nobility +
                 ", honor " + honor +
-                ", bravery " + bravery +
-                '}';
+                ", bravery " + bravery;
     }
 
     public void compare (Gryffindor other) {

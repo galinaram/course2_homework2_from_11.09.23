@@ -13,12 +13,11 @@ public class Ravenclaw extends Hogwarts{
 
     @Override
     public String toString() {
-        return super.toString() + " Ravenclaw{" +
-                "mind=" + mind +
-                ", wisdom=" + wisdom +
-                ", wit=" + wit +
-                ", creation=" + creation +
-                '}';
+        return super.toString()  +
+                ", mind " + mind +
+                ", wisdom " + wisdom +
+                ", wit " + wit +
+                ", creation " + creation;
     }
     public void compare (Ravenclaw other) {
         int sumThis = this.mind+this.wisdom+this.wit+this.creation;

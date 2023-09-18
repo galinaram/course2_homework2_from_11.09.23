@@ -11,11 +11,10 @@ public class Hufflepuff extends Hogwarts {
 
     @Override
     public String toString() {
-        return super.toString() + " Hufflepuff{" +
-                "hardWork=" + hardWork +
-                ", loyalty=" + loyalty +
-                ", honesty=" + honesty +
-                '}';
+        return super.toString() +
+                ", hardWork " + hardWork +
+                ", loyalty " + loyalty +
+                ", honesty " + honesty;
     }
     public void compare (Hufflepuff other) {
         int sumThis = this.hardWork+this.loyalty+this.honesty;

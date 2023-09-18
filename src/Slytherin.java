@@ -15,13 +15,12 @@ public class Slytherin extends Hogwarts{
 
     @Override
     public String toString() {
-        return super.toString() + " Slytherin{" +
-                "cunning=" + cunning +
-                ", determination=" + determination +
-                ", ambition=" + ambition +
-                ", resourcefulnes=" + resourcefulnes +
-                ", lustForPower=" + lustForPower +
-                '}';
+        return super.toString()  +
+                ", cunning " + cunning +
+                ", determination " + determination +
+                ", ambition " + ambition +
+                ", resourcefulnes " + resourcefulnes +
+                ", lustForPower " + lustForPower;
     }
 
     public void compare (Slytherin other) {

@@ -7,9 +7,21 @@ public class Main {
             System.out.println(tmp.toString());
         }
     }
-    public static void compare(Hogwarts[] hogwarts, int i, int j) {
+    public static void compareHogwarts(Hogwarts[] hogwarts, int i, int j) {
         Hogwarts tmp1 = hogwarts[i];
         Hogwarts tmp2 = hogwarts[j];
+        tmp1.compare(tmp2);
+    }
+    public static void compareGryffindor(Gryffindor tmp1, Gryffindor tmp2){
+        tmp1.compare(tmp2);
+    }
+    public static void compareSlytherin(Slytherin tmp1, Slytherin tmp2){
+        tmp1.compare(tmp2);
+    }
+    public static void compareHufflepuff(Hufflepuff tmp1, Hufflepuff tmp2){
+        tmp1.compare(tmp2);
+    }
+    public static void compareRavenclaw(Ravenclaw tmp1, Ravenclaw tmp2) {
         tmp1.compare(tmp2);
     }
     public static void main(String[] args) {
@@ -33,19 +45,24 @@ public class Main {
 
         };
         print(students);
-//        PrintService printService = new PrintService();
+
+
+        System.out.println("========= Сравнение студентов ==========");
+        compareHogwarts(students, 1, 4);
+        compareHogwarts(students, 0, 3);
+        compareHogwarts(students, 8, 6);
+        System.out.println("========= Сравнение студентов Гриффиндора ========");
+        compareGryffindor((Gryffindor) students[0], (Gryffindor) students[2]);
+        compareGryffindor((Gryffindor) students[1], (Gryffindor) students[2]);
+        System.out.println("========= Сравнение студентов Слизерина ========");
+        compareSlytherin((Slytherin) students[3], (Slytherin) students[5]);
+        compareSlytherin((Slytherin) students[4], (Slytherin) students[5]);
+        System.out.println("========= Сравнение студентов Пуффендуя ========");
+        compareHufflepuff((Hufflepuff) students[6], (Hufflepuff) students[8]);
+        compareHufflepuff((Hufflepuff) students[7], (Hufflepuff) students[8]);
+        System.out.println("========= Сравнение студентов Когтеврана ========");
+        compareRavenclaw((Ravenclaw) students[9], (Ravenclaw) students[11]);
+        compareRavenclaw((Ravenclaw) students[10], (Ravenclaw) students[11]);
 
     }
-
-
-
-    //
-//     System.out.println("Количество учеников: " + hogwarts.length);
-//        for (int i = 0; i < hogwarts.length; i++) {
-//        Hogwarts tmp = hogwarts[i];
-//        System.out.println("Имя: " + tmp.getName());
-//        }
-
-
-//    }
-}
+    }
